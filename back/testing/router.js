@@ -15,7 +15,7 @@ WebServer.get("/index.js", (req,res) => { res.sendFile("index.js") })
 WebServer.get("/favicon.ico", (req,res) => { res.status(404); res.send() })
 
 // I want to know if the game exists!
-WebServer.post("/game", express.json(), (req,res) => {
+WebServer.post("/api/join-game", express.json(), (req,res) => {
     res.setHeader('Content-Type', 'application/json');
     
     let GameID = req.body.GameID
@@ -34,6 +34,15 @@ WebServer.post("/game", express.json(), (req,res) => {
         req.send({ success: false })
         // what the hell dawg
     }
+})
+
+WebServer.post("/api/create-game", express.json(), (req,res) => {
+    res.setHeader('Content-Type', 'application/json');
+
+    let GameID = (Math.random() + 1).toString(36).substring(9)
+
+    req.statusCode(200)
+    req.send({"GameID": GameID})
 })
 
 WebServer.listen(2055)
