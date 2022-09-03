@@ -1,1 +1,0 @@
-console.log(Math.clamp(5, 1, 5))
