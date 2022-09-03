@@ -1,0 +1,31 @@
+WEBSITE
+
+URL /api/join-game
+BODY {
+    GameID: ID
+}
+
+RESPONS
+
+KOD 200
+BODY {
+    success: true
+}
+KOMMENTAR spelet finns så nu kan du öppna en websocket med gameid
+
+KOD 200
+BODY {
+    success: false
+}
+KOMMENTAR spelet finns inte, du kan inte skriva
+
+URL /api/create-game
+BODY {}
+
+RESPONS
+
+KOD 200
+BODY {
+    GameID: ID
+}
+KOMMENTAR skaparen har fått ID, skapa en websocket med gameid
