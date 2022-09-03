@@ -1,0 +1,27 @@
+.main {
+    width: 99%;
+    height: 99vh;
+    background-color: var(--base-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    width: 50%;
+    background-color: var(--base);
+
+}
+
+.button {
+    padding: 20px 40px;
+    background-color: var(--prim-dark);
+    color: #990;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+}

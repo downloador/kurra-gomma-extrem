@@ -8,5 +8,8 @@
   "scripts": {
     "front-dev": "cd front && next dev",
     "front-build": "cd front && next build"
+  },
+  "devDependencies": {
+    "sass": "^1.54.8"
   }
 }
