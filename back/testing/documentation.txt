@@ -29,3 +29,5 @@ BODY {
     GameID: ID
 }
 KOMMENTAR skaparen har fått ID, skapa en websocket med gameid
+
+test
