@@ -1,5 +1,12 @@
 {
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "front-dev": "cd front && next dev",
+    "front-build": "cd front && next build"
   }
 }
