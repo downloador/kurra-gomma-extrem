@@ -1,4 +1,22 @@
 
+function Button({text, onClick}) {
+  return(
+    <div style={{
+      backgroundColor: "var(--prim)",
+      width: "180px",
+      padding: "20px 0",
+      margin: "32px",
+      borderRadius: "20px",
+      fontSize: "50px",
+      textAlign: "center",
+      fontFamily: "'Nunito', sans-serif",
+      userSelect: "none",
+    }} onClick={onClick}>
+      {text}
+    </div>
+  )
+}
+
 function HomePage() {
   return(
   <main
@@ -13,8 +31,9 @@ function HomePage() {
   >
     <div
     style={{
-      width: "50%",
+      width: "100%",
       backgroundColor: "var(--base)",
+      height: "100%",
     }}
     >
       <div
@@ -23,12 +42,8 @@ function HomePage() {
         justifyContent: "center",
       }}
       >
-        <div>
-          join
-        </div>
-        <div>
-          start
-        </div>
+        <Button text="join"/>
+        <Button text="host"/>
       </div>
     </div>
   </main>
