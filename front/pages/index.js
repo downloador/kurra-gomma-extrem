@@ -1,3 +1,5 @@
+import Page from "../helpers/page"
+
 
 function Button({text, onClick}) {
   return(
@@ -19,34 +21,17 @@ function Button({text, onClick}) {
 
 function HomePage() {
   return(
-  <main
-  style={{
-    width: "100%",
-    height: "100vh",
-    backgroundColor: "var(--base-dark)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  }}
-  >
+  <Page>
     <div
     style={{
-      width: "100%",
-      backgroundColor: "var(--base)",
-      height: "100%",
+      display: "flex",
+      justifyContent: "center",
     }}
     >
-      <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-      }}
-      >
-        <Button text="join"/>
-        <Button text="host"/>
-      </div>
+      <Button text="join"/>
+      <Button text="host"/>
     </div>
-  </main>
+  </Page>
   )
 }
 
