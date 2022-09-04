@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+:root {
+  --base-dark: #003BB3;
+  --base: #0055FF;
+  --acc: #FFEE00;
+  --prim: #F700FF;
+  --prim-dark: #AA00B3;
+
+  /* size variables */
+  --cont: 60%; /* percent of main page */
+  --innr: 80%; /* percent of the --cont variable*/
+
+}
